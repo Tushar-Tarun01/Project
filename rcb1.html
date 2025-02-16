@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB Cricket Team</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: LightGray;
+        }
+        header {
+            background-color: DarkRed;
+            color: White;
+            text-align: center;
+            padding: 15px;
+            font-size: 2.5em; 
+            letter-spacing: 2px;
+            transition: background-color 0.3s;
+        }
+        header:hover {
+            background-color: Gold;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .team-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .team-info div {
+            flex: 1;
+            padding: 20px;
+            background-color: pink;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-info div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .team-info img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        table, th, td {
+            border: 1px solid LightGray;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: DarkRed;
+            color: White;
+        }
+        td {
+            background-color: LightGray;
+        }
+        a {
+            color: DarkRed;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: Gold;
+            text-decoration: underline;
+        }
+        .button {
+            background-color: DarkRed;
+            color: White;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: Gold;
+        }
+        .list-style {
+            list-style-type: square;
+            padding: 0;
+        }
+        .list-style li {
+            margin: 5px 0;
+        }
+        
+        footer {
+            background-color: DarkRed;
+            color: White;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Ball Animation */
+        .ball {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        .ball2 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 50%;
+            animation: bounce 2s 1s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(300px); }
+            100% { transform: translateY(0); }
+        }
+
+       
+
+    </style>
+</head>
+<body>
+
+<header>
+    Royal Challengers Bangalore (RCB)
+</header>
+
+<div class="container">
+    <div class="team-info">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlJcv_47WGicdcqZXAq30KfXD6magukS8uWdPvxDTwyTj1_gexl7usbY&s=10" alt="RCB Logo"> </img>
+            <p><strong>RCB - A Legacy of Excellence</strong></p>
+            <p>The Royal Challengers Bangalore (RCB) is a franchise cricket team that competes in the Indian Premier League (IPL). Founded in 2008, the team is based in Bangalore, Karnataka.</p>
+            <a href="https://www.royalchallengers.com/" target="_blank" class="button">Visit Official Website</a>
+        </div>
+
+        <div>
+            <h2>Key Players</h2>
+            <ul class="list-style">
+                <li>Virat Kohli</li>
+                <li>AB de Villiers</li>
+                <li>Glenn Maxwell</li>
+                <li>Yuzvendra Chahal</li>
+                <li>Mohammad Siraj</li>
+<li>Chris Gayle</li>
+<li>Dinesh karthik</li>
+<li>Ellyse Perry </li>
+<li>Smriti Mandhana</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Upcoming Matches</h2>
+            <table>
+                <tr>
+                    <th>Opponent</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+                <tr>
+                    <td>Chennai Super Kings</td>
+                    <td>20th April 2025</td>
+                    <td>M.Chinnaswamy Stadium</td>
+                </tr>
+                <tr>
+                    <td>Delhi Capitals</td>
+                    <td>23rd April 2025</td>
+                    <td>Arun Jaitley Stadium</td>
+                </tr>
+                <tr>
+                    <td>Mumbai Indians</td>
+                    <td>25th May 2025</td>
+                    <td>Wankhede Stadium</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="ball"></div>
+    <div class="ball2"></div>
+    <a href="https://shop.royalchallengers.com/merchandise" target="_blank">
+   
+            <button class="button">Get RCB Merchandise</button>
+        </a>
+    </div>
+    <footer>
+    &copy; 2025 Royal Challengers Bangalore. All Rights Reserved.
+</footer>
+</body>
+</html>
